@@ -1,0 +1,16 @@
+when we have missing data on our code , like = n/a or null ( prob because somaone just forogt something or idk) , isnt good to throw away all their data just by one missing row or column.
+one thing that we should do is see all the datatypes of each row / column 
+df = pd.read_csv (url of the data)
+df.head()  to sohw the first 5 rows
+ we can change the number for parameters , just like this:
+ df.columns = [
+    'age'
+    'years'
+    etc...
+ ]
+ and the we can use df.dtypes ( to see the type of data of the matrix)
+
+
+
+
+ obs : get_dummies and ColumnTransformer to transform values to numbers ( + xCOLUMNS , x being the number of diferent previous values)
